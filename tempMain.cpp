@@ -20,14 +20,17 @@ int main()
 		writeFile(data);
 		insert(data);
 	}
-	
 
 	for (int i=0; i<SIZE; i++){
 		if (dic[i]->key!=0)
 		cout << dic[i]->word << endl;
 	}
-	Data* result = find("love");
+	Data* result = find("fuck");
 	if (result==NULL)cout << "deo co";
 	else cout << endl << "nghia cua tu la: " << result->mean << endl;
+
+	bool del = removeF("fuck");
+	if (del) cout << "Done!";
+	else cout << "False!";
 	return 0;
 }

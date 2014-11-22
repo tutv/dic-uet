@@ -1,4 +1,3 @@
-hello;Xin chao
 bye;Cut'
-fuck;Dinh menh
 love;yeu say dam
+hello;Xin chao
