@@ -1,35 +1,43 @@
-#include "cvt.cpp"
+//#include "cvt.cpp"
+#include "Data.cpp"
 
 using namespace std;
 
-const long SIZE = 7;
+const long SIZE = 67;
 
 long hash(long key) {
 	return key % SIZE;
 }
 
-Data * dic[SIZE] = new Data[SIZE];
+Data * dic[SIZE];
 
-class tool {
-	public:
-		static void insert(Data * [], Data*);
-		static void remove(Data * [], string);
-		static int size();
-		static bool isEmpty();
-};
 
-void tool::insert(Data * dic[], Data * data) {
+void insert( Data * data) {
 	long hashKey = hash(data->key);
-	cout << "deoXong";
 	if (dic[hashKey]->key == 0) {
-		cout << "deoXong";
 		dic[hashKey] = data;
-		cout << "xong";
 	}
 	else {
 		Data * p = dic[hashKey]->next;
-		while (p->key != 0) p = p->next;
-		cout << "else";
+		while (p!=NULL){
+			p = p->next;
+		}
 		p = data;
+	}
+}
+
+Data * find(string word){
+	long key = cvt(word);
+	long hashKey = hash(key);
+	if (dic[hashKey]->key == key){
+		return dic[hashKey];
+	}
+	else {
+		Data* p = dic[hashKey]->next;
+		while(p!=NULL){
+			if (p->key==key) return p;
+			p = p->next;
+		}
+		return NULL;
 	}
 }

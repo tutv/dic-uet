@@ -1,4 +1,5 @@
 //class Data
+#include "cvt.cpp"
 
 
 class Data{
@@ -7,8 +8,8 @@ class Data{
 			key = 0;
 			next = NULL;
 		}
-		Data(long k, string w, string m){
-			key = k;
+		Data(string w, string m){
+			key = cvt(w);
 			word = w;
 			mean = m;
 			next = NULL;

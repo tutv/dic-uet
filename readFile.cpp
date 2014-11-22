@@ -1,33 +1,27 @@
 //
 const int sizeLine = 100;
 
-#include "Data.cpp"
 #include "tool.cpp"
 
-void readFile(Data* dic[]){
+void readFile(){
 	ifstream readFile("Data.txt");
 	char dong[sizeLine];
-	char *p;
-	string stringKey;
 	string word;
 	string mean;
-	long longKey;
 	while (!readFile.eof()){
 		readFile.getline(dong,sizeLine);
-		p = strtok(dong, ";");
-		stringKey = p;
-		longKey = 0;
-		for (int i=stringKey.size()-1; i>=0; i--){
-			longKey += ((int)stringKey[i]-48)*pow(10,stringKey.size()-1-i);
-		}
-		word = strtok(NULL,";");
+		word = strtok(dong, ";");
 		mean = strtok(NULL,";");
-		Data* data = new Data(longKey,word,mean);
-		cout <<  longKey << word << mean;
-		tool a;
-		cout << "alsdlfnldgnlsdg";
-		a.insert(dic,data);
-		cout << ";sdajgflsdkg";
+		Data* data = new Data(word,mean);
+		insert(data);
 	}
 	readFile.close();
+}
+
+void writeFile(Data * data){
+//	Data* result = find(data);
+//	if (result!=NULL) return;
+	ofstream writeFile("Data.txt",ios::out|ios::app);
+	writeFile << endl << data->word << ";" << data->mean;// << endl;
+	writeFile.close();
 }
