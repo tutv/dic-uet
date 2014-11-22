@@ -10,7 +10,7 @@ using namespace std;
 
 int main() {
 	//Load Dictionary
-	
+	cout << cvt("allways");
 
 	//Translate
 

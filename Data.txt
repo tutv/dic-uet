@@ -1,3 +1,24 @@
-bye;Cut'
-love;yeu say dam
+bye;tam biet
+love;yeu, thich
 hello;Xin chao
+accept;chap nhan
+accident;tai nan
+add;cong, them
+after;phia sau
+alone;co don, mot minh
+like;thich
+ask;hoi
+back;tro lai
+bad;toi te
+game;tro choi
+garden;vuon
+glass;thuy tinh, cai ly
+give;cho
+good;tot
+face;mat
+fake;gia mao
+famous;noi tieng
+feel;cam thay
+fire;nua
+fish;con ca
+flower;hoa, bong hoa

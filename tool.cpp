@@ -4,7 +4,7 @@
 
 using namespace std;
 
-const long SIZE = 67;
+const long SIZE = 19;
 
 long hash(long key) {
 	return key % SIZE;

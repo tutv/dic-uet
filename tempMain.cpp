@@ -21,16 +21,24 @@ int main()
 		insert(data);
 	}
 
+	// cout << "dsjfljsd";
+	Data * d = new Data("lovea", "thich hon");
+	insert(d);
+	int count = 0;
 	for (int i=0; i<SIZE; i++){
-		if (dic[i]->key!=0)
-		cout << dic[i]->word << endl;
-	}
-	Data* result = find("fuck");
-	if (result==NULL)cout << "deo co";
-	else cout << endl << "nghia cua tu la: " << result->mean << endl;
+		if (dic[i]->key!=0) {
+			cout << i << "\t" << dic[i]->key << "\t\t" << dic[i]->word << " -->> " << dic[i]->mean << endl;
+			count++;
+		}
 
-	bool del = removeF("fuck");
-	if (del) cout << "Done!";
-	else cout << "False!";
+		Data * p = dic[i]->next;
+		while (p!=NULL) {
+			count++;
+			cout << "ok";
+			cout << i << "\t" << p->key << "\t\t" << p->word << " -->> " << p->mean << endl;
+			p = p->next;
+		}
+	}
+	cout << count << endl;
 	return 0;
 }
