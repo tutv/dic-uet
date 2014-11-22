@@ -1,5 +1,4 @@
-using namespace std;
-long cvt(string x) {
+long cvt(std::string x) {
 	long temp = 0;
 	for (int i=x.length()-1; i>=0; i--) {
 		int num = (int)(x.at(i) - 96);
