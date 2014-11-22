@@ -4,6 +4,7 @@
 class Data{
 	public:
 		Data(){
+			key = 0;
 			next = NULL;
 		}
 		Data(long k, string w, string m){
