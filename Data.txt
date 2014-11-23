@@ -22,3 +22,4 @@ feel;cam thay
 fire;nua
 fish;con ca
 flower;hoa, bong hoa
+lovea;thich hon

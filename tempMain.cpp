@@ -13,32 +13,22 @@ int main()
 	for (int i=0; i<SIZE; i++){
 		dic[i] = new Data();
 	}
-	Data * data= new Data("love","yeu say dam");
 	readFile();
-	Data* r = find("love");
-	if (r==NULL){
-		writeFile(data);
-		insert(data);
-	}
+	
 
-	// cout << "dsjfljsd";
-	Data * d = new Data("lovea", "thich hon");
-	insert(d);
-	int count = 0;
-	for (int i=0; i<SIZE; i++){
-		if (dic[i]->key!=0) {
-			cout << i << "\t" << dic[i]->key << "\t\t" << dic[i]->word << " -->> " << dic[i]->mean << endl;
-			count++;
-		}
 
-		Data * p = dic[i]->next;
-		while (p!=NULL) {
-			count++;
-			cout << "ok";
-			cout << i << "\t" << p->key << "\t\t" << p->word << " -->> " << p->mean << endl;
-			p = p->next;
-		}
+//	if (find("lovea")!=NULL)cout << "Co lovea\n";
+//	else cout << "Khong co lovea\n";
+
+	Data* s = new Data("s","chu s trong bang chu cai");
+	if (find(s->word)==NULL){
+		writeFile(s);
+		insert(s);
 	}
-	cout << count << endl;
+	string xoa = "ask";
+	if(removeF(xoa)) cout << "xoa thanh cmn cong\n";
+	else cout << "eo xoa duoc/khong co tu " << xoa << " trong tu dien\n";
+	
+	printDic();
 	return 0;
 }
