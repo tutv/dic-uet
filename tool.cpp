@@ -47,26 +47,45 @@ bool removeF(string word) {
 	Data * result = find(word);
 	if (result == NULL) return false;
 	else {
-		result->key = -1;
-		result = result->next;
-		ofstream writeFile("Data.txt", ios::trunc|ios::out);
+		//////////////////
+		long hashKey = hash(result->key);
+		if (dic[hashKey]->key == result->key) {
+			dic[hashKey]->key = dic[hashKey]->next->key;
+			dic[hashKey]->word = dic[hashKey]->next->word;
+			dic[hashKey]->mean = dic[hashKey]->next->mean;
+			dic[hashKey]->next = dic[hashKey]->next->next;
+		}
+		else if (dic[hashKey]->key!=0){
+			Data * p = dic[hashKey];
+			while (p->next->key!=result->key && p->next!=NULL){
+				p = p->next;
+			}
+			if (p->next->key==result->key){
+				p->next = p->next->next;
+				return true;
+			}
+			if (p->next==NULL)	return false;
+		}
+
+		////////////////
+		ofstream writeF("Data.txt", ios::trunc|ios::out);
 		bool enter = false;
 		for (int i=0; i<SIZE; i++) {
 			if (dic[i]->key > 0) {
-				if (enter) writeFile << endl;
+				if (enter) writeF << endl;
 				// if (dic[i]->w)
-				writeFile << dic[i]->word << ";" << dic[i]->mean;
+				writeF << dic[i]->word << ";" << dic[i]->mean;
 				enter = true;
 
 				Data* p = dic[i]->next;
 				while (p != NULL) {
-					writeFile << endl << p->word << ";" << p->mean;
+					writeF << endl << p->word << ";" << p->mean;
 					p = p->next;
 				}
 			}
 		}
 
-		writeFile.close();
+		writeF.close();
 		return true;
 	}
 }

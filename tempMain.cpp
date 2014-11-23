@@ -25,13 +25,13 @@ int main()
 		writeFile(s);
 		insert(s);
 	}
-	string xoa = "ask";
+	string xoa = "add";
 	if(removeF(xoa)) cout << "xoa thanh cmn cong\n";
 	else cout << "eo xoa duoc/khong co tu " << xoa << " trong tu dien\n";
 
 
-	Data * d = find("bye");
-	if (d) cout << d->next->mean;
+	Data * d = find("ask");
+	if (d) cout << d->mean;
 	else cout << "eo co!!!!!!!";
 	cout << endl;
 	printDic();
