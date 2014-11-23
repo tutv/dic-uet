@@ -1,25 +1,26 @@
-bye;tam biet
-love;yeu, thich
-hello;Xin chao
-accept;chap nhan
-accident;tai nan
-add;cong, them
-after;phia sau
-alone;co don, mot minh
-like;thich
-ask;hoi
-back;tro lai
 bad;toi te
-game;tro choi
+bad;toi te
 garden;vuon
-glass;thuy tinh, cai ly
-give;cho
 good;tot
-face;mat
-fake;gia mao
-famous;noi tieng
-feel;cam thay
+glass;thuy tinh, cai ly
+fire;nua
 fire;nua
 fish;con ca
-flower;hoa, bong hoa
-lovea;thich hon
+accept;chap nhan
+accept;chap nhan
+accident;tai nan
+like;thich
+back;tro lai
+game;tro choi
+famous;noi tieng
+hello;Xin chao
+hello;Xin chao
+bye;tam biet
+bye;tam biet
+after;phia sau
+give;cho
+feel;cam thay
+feel;cam thay
+love;yeu, thich
+love;yeu, thich
+add;cong, them

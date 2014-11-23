@@ -57,8 +57,8 @@ bool removeF(string word) {
 				writeFile << dic[i]->word << ";" << dic[i]->mean;
 				enter = true;
 
-				Data* p = dic[i]->next;
-				while (p!=NULL) {
+				Data* p = dic[i];
+				while (p->next != NULL) {
 					if (enter) writeFile << endl;
 					writeFile << p->word << ";" << p->mean;
 					enter = true;

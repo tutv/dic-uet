@@ -14,7 +14,7 @@ int main()
 		dic[i] = new Data();
 	}
 	readFile();
-	
+
 
 
 //	if (find("lovea")!=NULL)cout << "Co lovea\n";
@@ -28,7 +28,7 @@ int main()
 	string xoa = "ask";
 	if(removeF(xoa)) cout << "xoa thanh cmn cong\n";
 	else cout << "eo xoa duoc/khong co tu " << xoa << " trong tu dien\n";
-	
+
 	printDic();
 	return 0;
 }
