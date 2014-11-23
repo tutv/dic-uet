@@ -1,7 +1,9 @@
 dic-uet
 =======
 
-Từ điển Anh - Việt
+Dictionary English - VietNamese
 
-Developed by Trần Văn Tú & Trần Minh Quý
+Developed by Tran Van Tu & Tran Minh Quy
 UET-VNU
+
+Member of Black Keyboard
