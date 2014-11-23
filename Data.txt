@@ -1,26 +1,25 @@
 bad;toi te
-bad;toi te
 garden;vuon
 good;tot
+s;chu s trong bang chu cai
 glass;thuy tinh, cai ly
 fire;nua
-fire;nua
 fish;con ca
-accept;chap nhan
 accept;chap nhan
 accident;tai nan
 like;thich
 back;tro lai
 game;tro choi
+face;mat
 famous;noi tieng
 hello;Xin chao
-hello;Xin chao
-bye;tam biet
+fake;gia mao
 bye;tam biet
 after;phia sau
+alone;co don, mot minh
 give;cho
 feel;cam thay
-feel;cam thay
-love;yeu, thich
+flower;hoa, bong hoa
 love;yeu, thich
 add;cong, them
+ask;hoi

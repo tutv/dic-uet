@@ -29,6 +29,11 @@ int main()
 	if(removeF(xoa)) cout << "xoa thanh cmn cong\n";
 	else cout << "eo xoa duoc/khong co tu " << xoa << " trong tu dien\n";
 
+
+	Data * d = find("bye");
+	if (d) cout << d->next->mean;
+	else cout << "eo co!!!!!!!";
+	cout << endl;
 	printDic();
 	return 0;
 }

@@ -47,21 +47,20 @@ bool removeF(string word) {
 	Data * result = find(word);
 	if (result == NULL) return false;
 	else {
-		result->key = 0;
+		result->key = -1;
+		result = result->next;
 		ofstream writeFile("Data.txt", ios::trunc|ios::out);
 		bool enter = false;
 		for (int i=0; i<SIZE; i++) {
-			if (dic[i]->key != 0) {
-				// if (dic[i]->word != "love")
+			if (dic[i]->key > 0) {
 				if (enter) writeFile << endl;
+				// if (dic[i]->w)
 				writeFile << dic[i]->word << ";" << dic[i]->mean;
 				enter = true;
 
-				Data* p = dic[i];
-				while (p->next != NULL) {
-					if (enter) writeFile << endl;
-					writeFile << p->word << ";" << p->mean;
-					enter = true;
+				Data* p = dic[i]->next;
+				while (p != NULL) {
+					writeFile << endl << p->word << ";" << p->mean;
 					p = p->next;
 				}
 			}
@@ -77,7 +76,7 @@ bool removeF(string word) {
 	Data * result = find(word);
 	if (result == NULL) return false;
 	else {
-		
+
 //		cout << "bat dau gan\n";
 //		//Gan result=result->next, result tro toi result->next->next
 //		result->key = result->next->key;
@@ -88,7 +87,7 @@ bool removeF(string word) {
 //		cout << "3\n";
 //		result->next = result->next->next;
 //		cout << "gan xong\n";
-		
+
 		//===============================================
 		ofstream writeFile("Data.txt", ios::trunc|ios::out);
 		for (int i=0; i<SIZE; i++) {
@@ -110,7 +109,7 @@ bool removeF(string word) {
 void printDic(){
 	int count = 0;
 	for (int i=0; i<SIZE; i++){
-		if (dic[i]->key!=0) {
+		if (dic[i]->key > 0) {
 			cout << i << "\t" << dic[i]->key << "\t\t" << dic[i]->word << " -->> " << dic[i]->mean << endl;
 			count++;
 			Data * p = dic[i]->next;
