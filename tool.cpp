@@ -144,4 +144,3 @@ void printDic(){
 	}
 	cout << count << endl;
 }
-//
