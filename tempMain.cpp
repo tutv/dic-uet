@@ -29,7 +29,6 @@ int main()
 	if(removeF(xoa)) cout << "xoa thanh cmn cong\n";
 	else cout << "eo xoa duoc/khong co tu " << xoa << " trong tu dien\n";
 
-
 	Data * d = find("ask");
 	if (d) cout << d->mean;
 	else cout << "eo co!!!!!!!";

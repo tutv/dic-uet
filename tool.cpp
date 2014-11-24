@@ -44,10 +44,12 @@ Data * find(string word){
 }
 
 bool removeF(string word) {
+	bool test = false;
 	Data * result = find(word);
-	if (result == NULL) return false;
+	if (result == NULL) test = false;
 	else {
-		//////////////////
+		ofstream writeF("Data.txt",ios::trunc|ios::out);
+		/////////////////
 		long hashKey = hash(result->key);
 		if (dic[hashKey]->key == result->key) {
 			dic[hashKey]->key = dic[hashKey]->next->key;
@@ -62,13 +64,12 @@ bool removeF(string word) {
 			}
 			if (p->next->key==result->key){
 				p->next = p->next->next;
-				return true;
+				test = true;
 			}
-			if (p->next==NULL)	return false;
+			if (p->next==NULL)	test = false;
 		}
 
 		////////////////
-		ofstream writeF("Data.txt", ios::trunc|ios::out);
 		bool enter = false;
 		for (int i=0; i<SIZE; i++) {
 			if (dic[i]->key > 0) {
@@ -86,8 +87,9 @@ bool removeF(string word) {
 		}
 
 		writeF.close();
-		return true;
+		test = true;
 	}
+	return test;
 }
 
 /*
