@@ -21,5 +21,4 @@ give;cho
 feel;cam thay
 flower;hoa, bong hoa
 love;yeu, thich
-add;cong, them
 ask;hoi
