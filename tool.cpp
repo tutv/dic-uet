@@ -91,7 +91,7 @@ bool removeF(string word) {
 	}
 	return test;
 }
-
+//////////////////////////////////
 /*
 bool removeF(string word) {
 	Data * result = find(word);
