@@ -1,6 +1,5 @@
 //class Data
-#include "cvt.cpp"
-
+#include "hashing.cpp"
 
 class Data{
 	public:
@@ -8,7 +7,7 @@ class Data{
 			key = 0;
 			next = NULL;
 		}
-		Data(string w, string m){
+		Data(std::string w, std::string m){
 			key = cvt(w);
 			word = w;
 			mean = m;
@@ -16,7 +15,7 @@ class Data{
 		}
 		~Data(){}
 		long key;
-		string word;
-		string mean;
+		std::string word;
+		std::string mean;
 		Data * next;
 };

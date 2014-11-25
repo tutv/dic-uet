@@ -4,37 +4,30 @@
 #include <stdio.h>
 #include <cstring>
 #include <cmath>
+#include "Dictionary.cpp"
+
 using namespace std;
-#include "readFile.cpp"
-//#include "Data.cpp"
 
-int main()
-{
-	for (int i=0; i<SIZE; i++){
-		dic[i] = new Data();
-	}
-	readFile();
+int main() {
+	Dictionary av = Dictionary();
+	av.loadFile("Data.txt");
+	av.print();
 
+	cout << "-------------------------------------\n";
+	bool del = av.remove("bad");
+	if (del) cout << "Xoa thanh cmn cong :]]]]]]\n";
+	else cout << "Eo xoa duoc :[[\n";
 
+	av.print();
+	av.updateFile("Data.txt");
 
-//	if (find("lovea")!=NULL)cout << "Co lovea\n";
-//	else cout << "Khong co lovea\n";
+	cout << "-------------------------------------\n";
 
-	Data* s = new Data("s","chu s trong bang chu cai");
-	if (find(s->word)==NULL){
-		writeFile(s);
-		insert(s);
-	}
-	string xoa = "add";
-	if(removeF(xoa)) cout << "xoa thanh cmn cong\n";
-	else cout << "eo xoa duoc/khong co tu " << xoa << " trong tu dien\n";
+	Data * wordDic = new Data("dictionary", "Tu dien");
 
-	Data * d = find("ask");
-	if (d) cout << d->mean;
-	else cout << "eo co!!!!!!!";
-	cout << endl;
-	printDic();
+	av.insert(wordDic);
+	av.updateFile("Data.txt");
+
+	av.print();
 	return 0;
 }
-
-/////////////////fdghkdg

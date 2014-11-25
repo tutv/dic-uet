@@ -1,18 +1,14 @@
 #include <iostream>
-#include <string>
-#include <cstdlib>
 #include <fstream>
+#include <iomanip>
+#include <stdio.h>
+#include <cstring>
 #include <cmath>
-#include <string>
-#include "cvt.cpp"//test cvt
-
 using namespace std;
+#include "readFile.cpp"
+//#include "Data.cpp"
 
 int main() {
-	//Load Dictionary
-	cout << cvt("allways");
-
-	//Translate
-
+	Dictionary dic = Dictionary();
 	return 0;
 }

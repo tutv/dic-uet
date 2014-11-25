@@ -1,3 +1,5 @@
+const long Size = 19;
+
 long cvt(std::string x) {
 	long temp = 0;
 	for (int i=x.length()-1; i>=0; i--) {
@@ -5,4 +7,8 @@ long cvt(std::string x) {
 		temp += (long)(num * pow(25, i));
 	}
 	return temp;
+}
+
+long hash(long key) {
+	return key % Size;
 }
