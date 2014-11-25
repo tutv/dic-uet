@@ -7,9 +7,9 @@ fish;con ca
 accept;chap nhan
 accident;tai nan
 like;thich
-back;tro lai
 game;tro choi
 face;mat
+back;quay
 famous;noi tieng
 hello;Xin chao
 fake;gia mao
@@ -21,4 +21,5 @@ feel;cam thay
 flower;hoa, bong hoa
 love;yeu, thich
 ask;hoi
-bad;toi te
+new;moi
+dictionary;Tu dien

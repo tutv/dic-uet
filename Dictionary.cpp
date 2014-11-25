@@ -25,6 +25,7 @@ public:
 	void insert2File(Data *, char *);//Maybe will delete
 	bool updateFile(char *);
 
+
 	Data * dic[Size];
 };
 
@@ -153,3 +154,4 @@ bool Dictionary::updateFile(char * fileName) {
 	}
 	writeF.close();
 }
+
