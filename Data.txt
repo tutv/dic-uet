@@ -2,6 +2,7 @@ garden;vuon
 good;tot
 s;chu s trong bang chu cai
 glass;thuy tinh, cai ly
+a;chu cai dau tien
 fire;nua
 fish;con ca
 accept;chap nhan

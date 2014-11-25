@@ -5,7 +5,6 @@
 #include <cstring>
 #include <cmath>
 #include <windows.h>
-//#include <stdio.h>
 #include <cmath>
 
 #include <conio.h>
@@ -67,9 +66,11 @@ int main() {
                 		}
                 		case 1:{
                 			//string s;
+                			fflush(stdin);
                 			cout << "Tu Tieng Anh muon them: ";		cin >> s;
                 			//string mean;
                 			char mean[50];
+                			fflush(stdin);
                 			gotoxy(5,7);	cout << "Nghia cua tu do: ";	gets(mean);//cin >> mean;
                 			Data * wordIn = new Data(s,mean);
                 			dic.insert(wordIn);
