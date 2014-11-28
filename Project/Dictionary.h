@@ -7,6 +7,7 @@
 #include <cstring>
 
 #include "Data.h"
+#include "Menu.h"
 
 const int sizeLine = 100;					//Lay toi da 100 ki tu moi dong trong File
 
@@ -26,7 +27,7 @@ class Dictionary {
 		void insert2File(Data *, char *);	//Maybe will delete
 		bool updateFile(char *);			//Viet tat ca cac tu trong Dictionary ra File
 	
-	
+	private:
 		Data * dic[Size];					//Bang bam chua Dictionary
 };
 #endif

@@ -5,11 +5,13 @@
 
 #include <iostream>
 #include <cmath>
+#include <stdexcept>
 using namespace std;
 
 const long Size = 19;	//So phan tu trong Mang
 long cvt(string);		//Chuyen mot xau thanh so
 long hash(long);		//Chuyen mot so thanh toa do trong Bang? bam
+void quyChuan(string&);
 
 class Data{
 	public:

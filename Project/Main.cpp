@@ -85,5 +85,6 @@ int main() {
         }
     }
     menu.deleteScreen();
+    gotoxy(8,5);	cout << "GOOD BYE!!!\n\n\n";	Sleep(500);
 	return 0;
 }

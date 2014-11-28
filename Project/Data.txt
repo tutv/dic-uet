@@ -1,24 +1,23 @@
-garden;vuon
-good;tot
-glass;thuy tinh, cai ly
-fire;nua
 fish;con ca
-accept;chap nhan
-accident;tai nan
-like;thich
-game;tro choi
-face;mat
-back;quay
-famous;noi tieng
-hello;Xin chao
-fake;gia mao
-after;phia sau
-alone;co don, mot minh
+love;yeu, thich
 bye;Tam biet
+garden;vuon
+fire;nua
+fake;gia mao
+dictionary;Tu dien
+glass;thuy tinh, cai ly
+hello;Xin chao
+ask;hoi
+game;tro choi
+like;thich
+accept;chap nhan
+face;mat
 give;cho
 feel;cam thay
+accident;tai nan
+famous;noi tieng
+after;phia sau
+alone;co don, mot minh
+good;tot
 flower;hoa, bong hoa
-love;yeu, thich
-ask;hoi
-new;moi
-dictionary;Tu dien
+new;tin tuc

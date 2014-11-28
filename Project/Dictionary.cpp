@@ -2,6 +2,7 @@
 
 #include "Dictionary.h"
 
+
 Dictionary::Dictionary() {
 	for (int i=0; i<Size; i++) {
 		dic[i] = new Data();
@@ -10,6 +11,7 @@ Dictionary::Dictionary() {
 
 Dictionary::~Dictionary() {
 }
+
 
 
 void Dictionary::insert(Data * data) {
